@@ -1,0 +1,84 @@
+//--------------------------------------------FLEX ROW
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-s-col {
+    display: flex;
+    flex-direction: row;
+
+    @include respond(break-s) {
+        flex-direction: column;
+    }
+}
+
+@mixin flex-row-m-col {
+    display: flex;
+    flex-direction: row;
+
+    @include respond(break-m) {
+        flex-direction: column;
+    }
+}
+
+@mixin flex-row-justify {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flex-row-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+//----------------------------------------------FLEX COL
+
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-col-justify {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-col-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//-------------------------------------------SHADOWS
+
+
+@mixin box-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@mixin box-shadow-up {
+    box-shadow: 0 -2px rgba(0,0,0,0.12), 0 -2px 7px rgba(0,0,0,0.24);
+}
+
+@mixin box-shadow-low {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.12);
+}
+
+//-------------------------------------------TRANSITIONS
+
+@mixin transition {
+    transition: all .2s ease-out;
+}
