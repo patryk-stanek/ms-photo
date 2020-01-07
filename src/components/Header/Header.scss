@@ -1,0 +1,40 @@
+@import "../../styles.scss";
+
+.head {
+    @include box-shadow;
+    @include flex-row;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+    position: fixed;
+    background-color: $color-white;
+    height: 15vh;
+    width: 100%;
+
+    &__wrap {
+        flex-basis: 20%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    &__text {
+        font-family: $font-primary;
+        font-size: 55px;
+        font-weight: 100;
+        color: $color-3;
+        line-height: 45px;
+    }
+
+    &__span {
+        color: $color-3;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}

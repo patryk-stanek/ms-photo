@@ -12,8 +12,13 @@ import "./Header.scss"
 export class Header extends React.Component {
     render() {
         return (
-            <div>
-                <h1>Header</h1>
+            <div className="head">
+                <div className="head__wrap">
+                    <div className="head__logo">
+                        <h1 className="head__text">Ms. Photo</h1>
+                        <span className="head__span">Photography</span>
+                    </div>
+                </div>
                 <Navigation />
                 <Socialbar />
             </div>

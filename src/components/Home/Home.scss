@@ -1,0 +1,11 @@
+@import "../../styles.scss";
+
+.home {
+    background-image: url("../../assets/images/person-1.jpg");
+    background-color: $color-1;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 15vh;
+}

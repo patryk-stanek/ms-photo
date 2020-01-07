@@ -1,0 +1,89 @@
+@import "../../styles.scss";
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-basis: 60%;
+    font-size: 17px;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    &__link {
+        text-decoration: none;
+        color: $color-3;
+        margin: 0 25px;
+        position: relative;
+
+        &::before {
+            @include transition;
+            content: "";
+            height: 1px;
+            background-color: $color-3;
+            display: block;
+            width: 0%;
+            position: absolute;
+            right: 50%;
+            bottom: 0;
+        }
+
+        &::after {
+            @include transition;
+            content: "";
+            height: 1px;
+            background-color: $color-3;
+            display: block;
+            width: 0%;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+        }
+
+        @include respond(hover) {
+            &:hover,
+            &:active {
+
+                &::before,
+                &::after {
+                    width: 50%;
+
+                    @include respond(break-m) {
+                        width: 0;
+                    }
+                }
+
+                @include respond(break-m) {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &--active {
+            color: $color-black;
+
+            &::before {
+                @include transition;
+                content: "";
+                height: 1px;
+                background-color: $color-black;
+                display: block;
+                width: 50%;
+                position: absolute;
+                right: 50%;
+                bottom: 0;
+            }
+    
+            &::after {
+                @include transition;
+                content: "";
+                height: 1px;
+                background-color: $color-black;
+                display: block;
+                width: 50%;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+            }
+        }
+    }
+}
