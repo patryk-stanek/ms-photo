@@ -1,0 +1,49 @@
+@import "../../styles.scss";
+
+.menubar {
+    @include box-shadow;
+    @include flex-row;
+    @include transition;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+    position: fixed;
+    background-color: $color-white;
+    height: 15vh;
+    width: 100%;
+    top: 0;
+
+    &__bg {
+        height: 5vh;
+    }
+
+    &__wrap {
+        flex-basis: 20%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-family: $font-primary;
+        font-weight: 100;
+        color: $color-3;
+        line-height: 45px;
+        margin: 0 20px;
+    }
+
+    &__span {
+        color: $color-3;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        &--off {
+            display: none
+        }
+    }
+}

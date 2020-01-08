@@ -1,11 +1,101 @@
 @import "../../styles.scss";
 
 .home {
-    background-image: url("../../assets/images/person-1.jpg");
-    background-color: $color-1;
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    padding-top: 15vh;
+
+    &__header {
+        @include box-shadow;
+        height: 100vh;
+        position: relative;
+    }
+
+    &__welcome {
+    }
+
+    &__container {
+        text-align: center;
+        padding: 100px 0;
+        color: $color-3;
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        font-weight: 100;
+        text-transform: uppercase;
+
+        &--1 {
+            font-size: 33px;
+            margin-bottom: 75px;
+        }
+
+        &--2 {
+            font-size: 28px;
+            margin-bottom: 75px;
+        }
+
+        &--3 {
+            font-size: 21px;
+        }
+    }
+
+    &__paragraph {
+        font-family: $font-primary;
+
+        &--1 {
+            font-size: 20px;
+        }
+
+        &--2 {
+            font-size: 18px;
+        }
+    }
+
+    &__offer > &__container {
+        background-color: $color-4;
+        max-width: 1400px;
+        padding: 100px 100px 50px;
+        margin-bottom: 100px;
+        color: $color-black;
+        @include box-shadow;
+    }
+
+    &__box {
+        @include flex-row;
+        margin: 50px 25px;
+    }
+
+    &__wrap {
+        flex-basis: 50%;
+        @include flex-col;
+        justify-content: space-around;
+
+        &:first-child {
+            text-align: right;
+        }
+
+        &:last-child {
+            text-align: left;
+        }
+    }
+
+    &__photo {
+        @include box-shadow;
+        flex-basis: 50%;
+        width: 100px;
+
+        &:first-child {
+            margin-right: 70px;
+        }
+
+        &:last-child {
+            margin-left: 70px;
+        }
+    }
+
+    &__gallery {
+        @include flex-row;
+    }
+
+    &__img {
+        width: 25%;
+    }
 }

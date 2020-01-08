@@ -2,7 +2,8 @@
 import React from "react";
 
 //Importing components
-import { Header } from "../Header/Header"
+import { Menubar } from "../Menubar/Menubar";
+import { Footer } from "../Footer/Footer";
 
 //Importing styles
 import "./Body.scss"
@@ -11,9 +12,10 @@ import "./Body.scss"
 export class Body extends React.Component {
     render() {
         return (
-            <div>
-                <Header />
+            <div className="body">
+                <Menubar />
                 {this.props.children}
+                <Footer />
             </div>
         )
     }

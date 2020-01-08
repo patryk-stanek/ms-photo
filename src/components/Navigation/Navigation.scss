@@ -14,6 +14,7 @@
         color: $color-3;
         margin: 0 25px;
         position: relative;
+        padding-bottom: 2px;
 
         &::before {
             @include transition;
