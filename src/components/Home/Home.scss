@@ -13,7 +13,7 @@
 
     &__container {
         text-align: center;
-        padding: 100px 0;
+        padding: 150px 0;
         color: $color-3;
     }
 
@@ -23,17 +23,17 @@
         text-transform: uppercase;
 
         &--1 {
-            font-size: 33px;
+            font-size: 37px;
             margin-bottom: 75px;
         }
 
         &--2 {
-            font-size: 28px;
+            font-size: 33px;
             margin-bottom: 75px;
         }
 
         &--3 {
-            font-size: 21px;
+            font-size: 25px;
         }
     }
 
@@ -51,16 +51,22 @@
 
     &__offer > &__container {
         background-color: $color-4;
-        max-width: 1400px;
-        padding: 100px 100px 50px;
-        margin-bottom: 100px;
+        max-width: 1500px;
+        padding: 100px 150px;
+        margin-bottom: 150px;
         color: $color-black;
+        border-radius: 5px;
         @include box-shadow;
     }
 
     &__box {
         @include flex-row;
-        margin: 50px 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+
+        &:first-of-type {
+            margin-bottom: 75px;
+        }
     }
 
     &__wrap {
@@ -81,6 +87,7 @@
         @include box-shadow;
         flex-basis: 50%;
         width: 100px;
+        border-radius: 5px;
 
         &:first-child {
             margin-right: 70px;
@@ -91,11 +98,39 @@
         }
     }
 
+    &__link {
+        @include box-shadow;
+        @include transition;
+        border: 1px solid $color-2;
+        background-color: $color-2;
+        color: $color-white;
+        font-family: $font-secondary;
+        font-size: 21px;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 100px;
+        display: inline-block;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
     &__gallery {
         @include flex-row;
+        flex-wrap: wrap;
     }
 
     &__img {
+        @include transition;
         width: 25%;
+        cursor: pointer;
+        -webkit-filter: brightness(100%);
+
+        &:hover,
+        &:active {
+            -webkit-filter: brightness(70%);
+        }
     }
 }

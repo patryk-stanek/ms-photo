@@ -10,9 +10,14 @@ import "./Footer.scss"
 export class Footer extends React.Component {
     render() {
         return (
-            <div>
-                Footer
-            </div>
+            <footer className="footer">
+                <div className="footer__container container">
+                    <span className="footer__text">Ms. Photo Photography</span>
+                    <span className="footer__text">+12 234 567 890</span>
+                    <span className="footer__text">ms.photo@photos.com</span>
+                    <span className="footer__signature">Designed and created by Patryk Stanek, Copyright 2020</span>
+                </div>
+            </footer>
         )
     }
 }

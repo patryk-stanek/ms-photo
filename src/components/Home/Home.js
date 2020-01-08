@@ -1,6 +1,7 @@
 //Importing modules
 import React from "react";
 import BackgroundSlider from "react-background-slider"
+import { Link } from "react-router-dom";
 
 //Importing components
 
@@ -41,7 +42,7 @@ class Home extends React.Component {
                 <section className="home__offer">
                     <div className="home__container container">
                         <h2 className="home__heading home__heading--2">
-                            What I offer
+                            What Do I offer
                         </h2>
                         <div className="home__box">
                             <div className="home__wrap">
@@ -73,18 +74,18 @@ class Home extends React.Component {
                                 </p>
                             </div>
                         </div>
+                        <Link
+                            to="/contact"
+                            className="home__link"
+                        >
+                            Contact me!
+                        </Link>
                     </div>
                 </section>
                 <section className="home__gallery">
-                    {[1,2,3,4].map((x,i) => 
+                    {[1,2,3,4,5,6,7,8].map((x,i) => 
                         <img src={`../../images/landscape-${i+1}.jpg`} alt={i} className="home__img"/>
                     )}
-                </section>
-                <section className="home__testimonials">
-                    
-                </section>
-                <section className="home__contact">
-
                 </section>
             </div>
         )
