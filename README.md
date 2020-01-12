@@ -6,6 +6,7 @@ This project was bootstrapped with [Create Next App](https://github.com/segmenti
 
 Main technologies used in this app (so far):
 
+- React for UI building;
 - React Background Slider for header slideshow;
 
 ## Available Scripts
