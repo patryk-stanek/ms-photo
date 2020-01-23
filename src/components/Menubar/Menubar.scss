@@ -10,12 +10,15 @@
     position: fixed;
     background-color: $color-white;
     height: 15vh;
+    height: 150px;
     width: 100%;
     top: 0;
     z-index: 9999;
+    overflow: hidden;
 
     &__bg {
         height: 5vh;
+        height: 50px;
     }
 
     &__wrap {

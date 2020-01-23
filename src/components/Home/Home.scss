@@ -49,20 +49,13 @@
         }
     }
 
-    &__offer > &__container {
-        background-color: $color-4;
-        max-width: 1500px;
-        padding: 100px 150px;
-        margin-bottom: 150px;
+    &__offer {
+        background-color: rgba($color-4, .5);
         color: $color-black;
-        border-radius: 5px;
-        @include box-shadow;
     }
 
     &__box {
         @include flex-row;
-        margin-left: 25px;
-        margin-right: 25px;
 
         &:first-of-type {
             margin-bottom: 75px;
@@ -86,8 +79,7 @@
     &__photo {
         @include box-shadow;
         flex-basis: 50%;
-        width: 100px;
-        border-radius: 5px;
+        width: 100px;   
 
         &:first-child {
             margin-right: 70px;
@@ -99,22 +91,58 @@
     }
 
     &__link {
+        position: relative;
         @include box-shadow;
         @include transition;
         border: 1px solid $color-2;
-        background-color: $color-2;
-        color: $color-white;
+        background-color: $color-white;
+        color: $color-2;
         font-family: $font-secondary;
-        font-size: 21px;
+        font-size: 16px;
+        font-weight: 700;
         padding: 15px 30px;
         text-transform: uppercase;
         text-decoration: none;
         margin-top: 100px;
         display: inline-block;
+        z-index: 0;
+
+        &:hover,
+        &:active {
+            color: $color-white;
+        }
 
         &:hover {
-            transform: translateY(-5px);
+            border: 1px solid $color-2;
         }
+
+        &:active {
+            border: 1px solid $color-1;
+        }
+    }
+
+    &__link::after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: $color-2;
+        transform: scaleY(0);
+        transition: transform .2s,
+                    width .2s cubic-bezier(1,0,0,1) .2s,
+                    background-color .1s;
+    }
+
+    &__link:hover::after {
+        transform: scaleY(1.1);
+        width: 100%;
+    }
+
+    &__link:active::after {
+        background-color: $color-1;
     }
 
     &__gallery {

@@ -1,90 +1,100 @@
 @import "../../styles.scss";
 
+$menu-items: 5;
+$menu-items-loop-offset: $menu-items - 1;
+$width: (100/$menu-items) * 1%;
+
 .navigation {
-    display: flex;
-    justify-content: center;
-    flex-basis: 60%;
-    font-size: 17px;
-    font-family: $font-secondary;
-    text-transform: uppercase;
-    font-weight: 400;
+  flex-basis: 50%;
+  font-size: 17px;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  position: relative;
 
-    &__link {
-        text-decoration: none;
-        color: $color-3;
-        margin: 0 25px;
-        position: relative;
-        padding-bottom: 2px;
+  &__link {
+    text-decoration: none;
+    color: $color-3;
+    padding: 13px 0;
+    width: $width;
+    display: block;
+    text-align: center;
+    background-color: $color-white;
+  }
 
-        &::before {
-            @include transition;
-            content: "";
-            height: 1px;
-            background-color: $color-3;
-            display: block;
-            width: 0%;
-            position: absolute;
-            right: 50%;
-            bottom: 0;
-        }
+  &__wrap {
+    width: 100%;
+  }
+}
 
-        &::after {
-            @include transition;
-            content: "";
-            height: 1px;
-            background-color: $color-3;
-            display: block;
-            width: 0%;
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-        }
+.indicator {
+  position: relative;
+  z-index: 0;
 
-        @include respond(hover) {
-            &:hover,
-            &:active {
+  .navigation__link {
 
-                &::before,
-                &::after {
-                    width: 50%;
-
-                    @include respond(break-m) {
-                        width: 0;
-                    }
-                }
-
-                @include respond(break-m) {
-                    font-weight: 500;
-                }
-            }
-        }
-
-        &--active {
-            color: $color-black;
-
-            &::before {
-                @include transition;
-                content: "";
-                height: 1px;
-                background-color: $color-black;
-                display: block;
-                width: 50%;
-                position: absolute;
-                right: 50%;
-                bottom: 0;
-            }
-    
-            &::after {
-                @include transition;
-                content: "";
-                height: 1px;
-                background-color: $color-black;
-                display: block;
-                width: 50%;
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-            }
-        }
+    &:last-child {
+        
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        transition: left .5s ease;
+      }
     }
+
+    &:after {
+      width: $width;
+      background: $color-2;
+      top: 0;
+      bottom: -3px;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.indicator {
+  @for $i from 1 through $menu-items-loop-offset {
+
+    .navigation__link:nth-child(#{$i}).navigation__link--active ~ .navigation__link:last-child:after {
+      left:($width*$i)-$width;
+    }
+    
+    .navigation__link:nth-child(#{$i}).navigation__link--active ~ .navigation__link:last-child:before {
+      left:($width*$i)+($width/2)-$width;
+    }
+  }
+}
+
+@for $i from 1 through $menu-items-loop-offset {
+  
+  .navigation__link:nth-child(#{$i}):hover ~ .navigation__link:last-child:after {
+    left:($width*$i)-$width !important;
+  }
+
+  .navigation__link:nth-child(#{$i}):hover ~ .navigation__link:last-child:before{
+    left:($width*$i)+($width/2)-$width !important;
+  }
+}
+
+.navigation__link {
+  &:last-child {
+    
+    &:hover, &.navigation__link--active {
+
+      &:before {
+        
+        left: (100%-$width)+($width/2) !important;
+      }
+
+      &:after{
+        left: 100%-$width !important;
+      }
+    }        
+  }
 }
