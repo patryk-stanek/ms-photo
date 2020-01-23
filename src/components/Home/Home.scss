@@ -9,11 +9,12 @@
     }
 
     &__welcome {
+        padding: 50px 0;
     }
 
     &__container {
         text-align: center;
-        padding: 150px 0;
+        padding: 100px 0;
         color: $color-3;
     }
 
@@ -39,6 +40,7 @@
 
     &__paragraph {
         font-family: $font-primary;
+        font-weight: 300;
 
         &--1 {
             font-size: 20px;
@@ -58,7 +60,7 @@
         @include flex-row;
 
         &:first-of-type {
-            margin-bottom: 75px;
+            margin-bottom: 70px;
         }
     }
 

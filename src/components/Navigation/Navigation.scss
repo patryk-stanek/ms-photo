@@ -7,9 +7,9 @@ $width: (100/$menu-items) * 1%;
 .navigation {
   flex-basis: 50%;
   font-size: 17px;
-  font-family: $font-secondary;
+  font-family: $font-primary;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 200;
   display: flex;
   justify-content: center;
   position: relative;
@@ -22,6 +22,10 @@ $width: (100/$menu-items) * 1%;
     display: block;
     text-align: center;
     background-color: $color-white;
+
+    &--active {
+      color: $color-black;
+    }
   }
 
   &__wrap {
@@ -36,6 +40,16 @@ $width: (100/$menu-items) * 1%;
   .navigation__link {
 
     &:last-child {
+
+      &:before {
+        border: 3px solid transparent;
+        border-bottom-color: $color-2;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        left: ($width/2);
+        margin-left: -3px;
+      }
         
       &:before,
       &:after {
@@ -51,7 +65,7 @@ $width: (100/$menu-items) * 1%;
       width: $width;
       background: $color-2;
       top: 0;
-      bottom: -3px;
+      bottom: -2px;
       left: 0;
       z-index: -1;
     }
