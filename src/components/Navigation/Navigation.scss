@@ -14,6 +14,15 @@ $width: (100/$menu-items) * 1%;
   justify-content: center;
   position: relative;
 
+  @include respond(break-l) {
+    flex-basis: 60%;
+  }
+
+  @include respond(break-s) {
+    display: none;
+    // visibility: hidden;
+  }
+
   &__link {
     text-decoration: none;
     color: $color-3;
@@ -97,12 +106,12 @@ $width: (100/$menu-items) * 1%;
 }
 
 .navigation__link {
+
   &:last-child {
     
     &:hover, &.navigation__link--active {
 
       &:before {
-        
         left: (100%-$width)+($width/2) !important;
       }
 
@@ -110,5 +119,40 @@ $width: (100/$menu-items) * 1%;
         left: 100%-$width !important;
       }
     }        
+  }
+}
+
+@keyframes animationFrames{
+  0% {
+    transform: scaleY(0)
+  }
+  100% {
+    transform: scaleY(1)
+  }
+}
+
+.mobile {
+  transition: transform 2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9250;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  // visibility: visible;
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: animationFrames .2s ease .01s forwards;
+
+  .navigation__link {
+    margin: 20px 0;
+    font-size: 20px;
   }
 }

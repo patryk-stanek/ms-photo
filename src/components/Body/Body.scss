@@ -1,3 +1,13 @@
+@import "../../styles.scss";
+
 .body {
-    padding-top: 15vh
+    padding-top: 150px;
+
+    @include respond(break-l) {
+        padding-top: 100px;
+    }
+    
+    @include respond(break-s) {
+        padding-top: 50px;
+    }
 }

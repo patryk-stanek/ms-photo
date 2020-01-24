@@ -29,6 +29,11 @@ code {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+  @include respond(break-xl) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .mockup {

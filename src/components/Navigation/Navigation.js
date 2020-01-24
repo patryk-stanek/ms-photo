@@ -7,12 +7,23 @@ import "./Navigation.scss"
 
 //Navigation component
 export const Navigation = props => {
+    let mobileChecker;
+
+    if (props.mobileVisibility === false) {
+        mobileChecker = "navigation indicator"
+    } else {
+        mobileChecker = "navigation mobile";
+        // document.getElementById("nav").style.transform = "scaleY(1)";
+        document.getElementById("nav").style.width = "100vw"
+    }
+
     return (
-        <nav className="navigation indicator">
+        <nav className={mobileChecker} id="nav">
             <NavLink
                 exact to="/"
                 className="navigation__link"
                 activeClassName="navigation__link--active"
+                onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
                     Home
@@ -22,6 +33,7 @@ export const Navigation = props => {
                 exact to="/gallery"
                 className="navigation__link"
                 activeClassName="navigation__link--active"
+                onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
                     Gallery
@@ -31,6 +43,7 @@ export const Navigation = props => {
                 exact to="/about"
                 className="navigation__link"
                 activeClassName="navigation__link--active"
+                onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
                     About
@@ -40,6 +53,7 @@ export const Navigation = props => {
                 exact to="/offer"
                 className="navigation__link"
                 activeClassName="navigation__link--active"
+                onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
                     Offer
@@ -49,6 +63,7 @@ export const Navigation = props => {
                 exact to="/contact"
                 className="navigation__link"
                 activeClassName="navigation__link--active"
+                onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
                     Contact
