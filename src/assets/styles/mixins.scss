@@ -83,7 +83,7 @@
     transition: all .2s ease-out;
 }
 
-//-------------------------------------------BUTTON
+//-------------------------------------------BASIC STYLES
 
 @mixin button-basic($selected-color) {
     @include box-shadow;
@@ -137,4 +137,26 @@
     &:active::after {
         background-color: $selected-color;
     }
+}
+
+@mixin heading {
+        font-family: $font-secondary;
+        color: $color-2;
+        font-weight: 100;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 37px;
+        margin: 75px 0;
+
+        @include respond(break-l) {
+            font-size: 30px;
+        }
+
+        @include respond(break-m) {
+            margin: 75px 0 25px;
+        }
+
+        @include respond(break-s) {
+            font-size: 25px;
+        }
 }
