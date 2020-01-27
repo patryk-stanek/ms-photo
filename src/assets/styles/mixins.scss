@@ -82,3 +82,59 @@
 @mixin transition {
     transition: all .2s ease-out;
 }
+
+//-------------------------------------------BUTTON
+
+@mixin button-basic($selected-color) {
+    @include box-shadow;
+    @include transition;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid $selected-color;
+    background-color: $color-white;
+    color: $selected-color;
+    font-family: $font-secondary;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    display: inline-block !important;
+    z-index: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    &::after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 101%;
+        width: 0px;
+        background-color: $selected-color;
+        transition: transform .2s,
+                    width .2s cubic-bezier(1,0,0,1) .2s,
+                    background-color .1s;
+    }
+
+    &:hover,
+    &:active {
+        color: $color-white;
+    }
+
+    &:hover {
+        border: 1px solid $selected-color;
+    }
+
+    &:active {
+        border: 1px solid $selected-color;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    &:active::after {
+        background-color: $selected-color;
+    }
+}

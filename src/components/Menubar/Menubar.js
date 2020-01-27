@@ -16,7 +16,7 @@ export class Menubar extends React.Component {
 
         this.state = {
             menubarSize: "menubar",
-            showLogoFully: "menubar__span",
+            showLogo: "./images/logo/logo-full.png",
             mobileMenuVisiblity: false,
             mobileMenuButton: "menubar__button"
         }
@@ -29,20 +29,27 @@ export class Menubar extends React.Component {
         window.addEventListener("scroll", this.listenScrollEvent);
         this.setState({
             mobileMenuVisiblity: false
-        })
+        });
+        if (window.innerWidth <= 576) {
+            this.setState({
+                showLogo: "./images/logo/logo-sub.png"
+            })
+        }
     }
 
     listenScrollEvent = e => {
-        if (window.scrollY > 30) {
-            this.setState({
-                menubarSize: "menubar menubar__bg",
-                showLogoFully: "menubar__span menubar__span--off"
-            })
-        } else {
-            this.setState({
-                menubarSize: "menubar",
-                showLogoFully: "menubar__span"
-            })
+        if (window.innerWidth > 576) {
+            if (window.scrollY > 30) {
+                this.setState({
+                    menubarSize: "menubar menubar__bg",
+                    showLogo: "./images/logo/logo-sub.png"
+                })
+            } else {
+                this.setState({
+                    menubarSize: "menubar",
+                    showLogo: "./images/logo/logo-full.png"
+                })
+            }
         }
     }
 
@@ -73,10 +80,7 @@ export class Menubar extends React.Component {
         return (
             <div className={this.state.menubarSize}>
                 <div className="menubar__wrap">
-                    <div className="menubar__logo">
-                        <h1 className="menubar__text">Ms. Photo</h1>
-                        <span className={this.state.showLogoFully}>Photography</span>
-                    </div>
+                    <img src={this.state.showLogo} alt="logo" className="menubar__logo"/>
                 </div>
                 <Navigation mobileVisibility={this.state.mobileMenuVisiblity} closeMenu={() => this.closeMobileMenu()}/>
                 <Socialbar />

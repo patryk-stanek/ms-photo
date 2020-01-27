@@ -7,9 +7,8 @@ $width: (100/$menu-items) * 1%;
 .navigation {
   flex-basis: 50%;
   font-size: 17px;
-  font-family: $font-primary;
+  font-family: $font-navigation;
   text-transform: uppercase;
-  font-weight: 200;
   display: flex;
   justify-content: center;
   position: relative;
@@ -18,15 +17,18 @@ $width: (100/$menu-items) * 1%;
     flex-basis: 60%;
   }
 
+  @include respond(break-m) {
+    flex-basis: 70%;
+  }
+
   @include respond(break-s) {
     display: none;
-    // visibility: hidden;
   }
 
   &__link {
     text-decoration: none;
     color: $color-3;
-    padding: 13px 0;
+    padding: 10px 0;
     width: $width;
     display: block;
     text-align: center;
@@ -52,7 +54,7 @@ $width: (100/$menu-items) * 1%;
 
       &:before {
         border: 3px solid transparent;
-        border-bottom-color: $color-2;
+        border-bottom-color: $color-1;
         width: 0;
         height: 0;
         bottom: 0;
@@ -72,7 +74,7 @@ $width: (100/$menu-items) * 1%;
 
     &:after {
       width: $width;
-      background: $color-2;
+      background: $color-1;
       top: 0;
       bottom: -2px;
       left: 0;
@@ -146,7 +148,6 @@ $width: (100/$menu-items) * 1%;
   z-index: 9250;
   overflow-y: hidden;
   overflow-x: hidden;
-  // visibility: visible;
   transform: scaleY(0);
   transform-origin: top;
   animation: animationFrames .2s ease .01s forwards;
