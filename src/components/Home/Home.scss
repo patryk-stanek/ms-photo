@@ -18,38 +18,6 @@
         color: $color-3;
     }
 
-    &__heading {
-        font-family: $font-secondary;
-        font-weight: 100;
-        text-transform: uppercase;
-
-        &--1 {
-            font-size: 37px;
-            margin-bottom: 75px;
-
-            @include respond(break-l) {
-                font-size: 30px;
-            }
-
-            @include respond(break-s) {
-                font-size: 25px;
-            }
-        }
-
-        &--2 {
-            font-size: 33px;
-            margin-bottom: 75px;
-        }
-
-        &--3 {
-            font-size: 25px;
-
-            @include respond(break-l) {
-                margin: 35px 0 25px;
-            }
-        }
-    }
-
     &__paragraph {
         font-family: $font-primary;
         font-weight: 300;
@@ -72,8 +40,7 @@
     }
 
     &__offer {
-        // background-color: rgba($color-4, .1);
-        background-color: rgba($color-2, .01);
+        background-color: rgba($color-5, .1);
         color: $color-black;
     }
 

@@ -17,10 +17,10 @@ class About extends React.Component {
                     </h1>
                 </div>
                 <div className="container about__container">
-                    <h2 className="about__heading">
+                    <h2 className="heading heading__1">
                         About me
                     </h2>
-                    <p className="about__paragraph">
+                    <p className="paragraph paragraph__1">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur tenetur adipisci ut molestiae, blanditiis excepturi doloremque possimus ab sed exercitationem nihil labore mollitia facere at maiores eveniet nisi neque odio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nihil eveniet commodi maxime suscipit delectus dolorum explicabo, et rem magni autem accusamus hic earum animi sed blanditiis sequi quasi illum?
                     </p>
                 </div>
@@ -30,10 +30,10 @@ class About extends React.Component {
                     </div>
                     <div className="about__box about__box--text">
                         <div className="about__content">
-                            <h3 className="about__heading about__heading--small">
+                            <h3 className="heading heading__2">
                                 My studio
                             </h3>
-                            <p className="about__paragraph about__paragraph--full">
+                            <p className="paragraph paragraph__2">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis consectetur inventore laudantium maxime veritatis et nam aliquid ipsum, error voluptatem alias debitis odit repudiandae repellendus nesciunt sapiente, voluptas fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, qui doloribus. Eius quas nihil iure sint dolores vitae labore, quae perspiciatis perferendis quod nobis. Eum rerum provident minus facere! Ad?
                             </p>
                         </div>

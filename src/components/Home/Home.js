@@ -31,25 +31,25 @@ class Home extends React.Component {
                 </header>
                 <section className="home__welcome">
                     <div className="home__container container">
-                        <h1 className="home__heading home__heading--1">
+                        <h1 className="heading heading__1">
                             English Photographer in Warsaw
                         </h1>
-                        <p className="home__paragraph home__paragraph--1">
+                        <p className="paragraph paragraph__1">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                         </p>
                     </div>
                 </section>
                 <section className="home__offer">
                     <div className="home__container container">
-                        <h2 className="home__heading home__heading--2">
+                        <h2 className="heading heading__1">
                             What Do I offer
                         </h2>
                         <div className="home__box">
                             <div className="home__wrap">
-                                <h3 className="home__heading home__heading--3">
+                                <h3 className="heading heading__3">
                                     Lorem Ipsum
                                 </h3>
-                                <p className="home__paragraph home__paragraph--2">
+                                <p className="paragraph paragraph__2">
                                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
                                 </p>
                             </div>
@@ -66,10 +66,10 @@ class Home extends React.Component {
                                 className="home__photo"
                             />
                             <div className="home__wrap">
-                                <h3 className="home__heading home__heading--3">
+                                <h3 className="heading heading__3">
                                     Lorem Ipsum
                                 </h3>
-                                <p className="home__paragraph home__paragraph--2">
+                                <p className="paragraph paragraph__2">
                                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
                                 </p>
                             </div>

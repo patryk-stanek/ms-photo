@@ -1,0 +1,75 @@
+.heading {
+    font-family: $font-secondary;
+    color: $color-3;
+    font-weight: 100;
+    text-transform: uppercase;
+
+    &__1 {
+        font-size: 37px;
+        margin-bottom: 75px;
+        text-align: center;
+
+        @include respond(break-l) {
+            font-size: 30px;
+        }
+
+        @include respond(break-s) {
+            font-size: 25px;
+        }
+    }
+
+    &__2 {
+        font-size: 33px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    &__3 {
+        font-size: 25px;
+
+        @include respond(break-l) {
+            margin: 35px 0 25px;
+        }
+    }
+}
+
+
+
+.paragraph {
+    font-family: $font-primary;
+    color: $color-3;
+
+    &__1 {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.7;
+        width: 75%;
+        margin: 0 auto;
+
+        @include respond(break-l) {
+            font-size: 17px;
+        }
+
+        @include respond(break-m) {
+            width: 100%;
+        }
+
+        @include respond(break-s) {
+            font-size: 15px;
+        }
+    }
+
+    &__2 {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.7;
+
+        @include respond(break-l) {
+            font-size: 17px;
+        }
+
+        @include respond(break-s) {
+            font-size: 15px;
+        }
+    }
+}
