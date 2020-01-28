@@ -4,12 +4,12 @@
 
     &__header {
         @include box-shadow;
-        height: 100vh;
+        height: 65vh;
         position: relative;
     }
 
     &__welcome {
-        padding: 50px 0;
+        // padding: 50px 0;
     }
 
     &__container {
@@ -18,102 +18,156 @@
         color: $color-3;
     }
 
-    &__paragraph {
-        font-family: $font-primary;
-        font-weight: 300;
-
-        &--1 {
-            font-size: 20px;
-
-            @include respond(break-l) {
-                font-size: 17px;
-            }
-
-            @include respond(break-s) {
-                font-size: 15px;
-            }
-        }
-
-        &--2 {
-            font-size: 18px;
-        }
-    }
-
-    &__offer {
-        background-color: rgba($color-5, .1);
-        color: $color-black;
-    }
-
-    &__box {
-        @include flex-row;
-
-        &:first-of-type {
-            margin-bottom: 70px;
-        }
-
-        @include respond(break-l) {
-            flex-direction: column;
-            align-items: center;
-        }
+    &__offer-gallery {
+        height: 150vh;
     }
 
     &__wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__main {
+        background-image: url(../../assets/images/offer1.jpg);
+        background-position: center;
+        background-size: cover;
         flex-basis: 50%;
-        @include flex-col;
-        justify-content: space-around;
+        height: 100%;
+        position: relative;
+    }
 
-        &:first-child {
-            text-align: right;
+    &__row {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: row;
+    }
 
-            @include respond(break-l) {
-                text-align: center;
-            }
+    &__sub {
+        background-position: top;
+        flex-basis: calc(100% / 3);
+        position: relative;
+        background-size: cover;
+        background-position: center;
+
+        &--first {
+            background-image: url(../../assets/images/offer2.jpg);
         }
 
-        &:last-child {
-            text-align: left;
-
-            @include respond(break-l) {
-                text-align: center;
-            }
+        &--second {
+            background-image: url(../../assets/images/offer3.jpg);
         }
 
-        @include respond(break-l) {
-            order: 2;
-            align-items: center;
+        &--third {
+            background-image: url(../../assets/images/offer4.jpg);
         }
     }
 
-    &__photo {
-        @include box-shadow;
-        flex-basis: 50%;
-        width: 100px;  
+    &__title {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        color: $color-white;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        font-family: $font-secondary;
+        font-size: 40px;
+        padding: 50px;
+        line-height: 2;
 
-        &:first-child {
-            margin-right: 70px;
-
-            @include respond(break-l) {
-                margin-right: 0;
-            }
+        &--big {
+            width: 30%;
         }
+    }
 
-        &:last-child {
-            margin-left: 70px;
+    &__description {
+        line-height: 1.5;
+        font-size: 16px;
+        display: block;
+        text-transform: initial;
+    }
 
-            @include respond(break-l) {
-                margin-left: 0;
-            }
-        }
+    // &__offer {
+    //     background-color: rgba($color-5, .1);
+    //     color: $color-black;
+    // }
 
-        @include respond(break-l) {
-            order: 1;
-            width: 100%;
-        }
+    // &__box {
+    //     @include flex-row;
+
+    //     &:first-of-type {
+    //         margin-bottom: 70px;
+    //     }
+
+    //     @include respond(break-l) {
+    //         flex-direction: column;
+    //         align-items: center;
+    //     }
+    // }
+
+    // &__wrap {
+    //     flex-basis: 50%;
+    //     @include flex-col;
+    //     justify-content: space-around;
+
+    //     &:first-child {
+    //         text-align: right;
+
+    //         @include respond(break-l) {
+    //             text-align: center;
+    //         }
+    //     }
+
+    //     &:last-child {
+    //         text-align: left;
+
+    //         @include respond(break-l) {
+    //             text-align: center;
+    //         }
+    //     }
+
+    //     @include respond(break-l) {
+    //         order: 2;
+    //         align-items: center;
+    //     }
+    // }
+
+    // &__photo {
+    //     @include box-shadow;
+    //     flex-basis: 50%;
+    //     width: 100px;  
+
+    //     &:first-child {
+    //         margin-right: 70px;
+
+    //         @include respond(break-l) {
+    //             margin-right: 0;
+    //         }
+    //     }
+
+    //     &:last-child {
+    //         margin-left: 70px;
+
+    //         @include respond(break-l) {
+    //             margin-left: 0;
+    //         }
+    //     }
+
+    //     @include respond(break-l) {
+    //         order: 1;
+    //         width: 100%;
+    //     }
+    // }
+
+    &__button {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 100px;
     }
 
     &__link {
         @include button-basic($color-1);
-        margin-top: 100px;
         text-decoration: none;
     }
 

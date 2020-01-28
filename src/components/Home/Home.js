@@ -4,6 +4,7 @@ import BackgroundSlider from "react-background-slider"
 import { Link } from "react-router-dom";
 
 //Importing components
+import { OfferTable } from "../OfferTable/OfferTable"
 
 //Importing images for background slideshow
 import image1 from "../../assets/images/person-1.jpg";
@@ -32,56 +33,63 @@ class Home extends React.Component {
                 <section className="home__welcome">
                     <div className="home__container container">
                         <h1 className="heading heading__1">
-                            English Photographer in Warsaw
+                            Fotografia Ciążowa i Noworodkowa Lelystad
                         </h1>
                         <p className="paragraph paragraph__1">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                            Witaj na mojej stronie! Jestem tutaj, aby pomóc Ci zachować piękne wspomnienia! Oferuję profesjonalne sesje zdjęciowe, a ich efektem są fotografie pełne emocji, subtelności i delikatności.
+                            Moim królestwem jest moje domowe studio, w którym realizuję sesje ciążowe, noworodkowe, dziecięce i rodzinne. Wykonuję również sesje tematyczne. 
+                            Drugą miłością są sesje plenerowe – kolory, zachód słońca, przepiękne miejsca – to coś, co pokochałam miłością odwzajemnioną!
+                            Zapraszam do kontaktu telefonicznego, mailowego lub poprzez formularz zamieszczony na stronie. Nie mogę się doczekać naszego spotkania!
                         </p>
                     </div>
                 </section>
-                <section className="home__offer">
-                    <div className="home__container container">
-                        <h2 className="heading heading__1">
-                            What Do I offer
-                        </h2>
-                        <div className="home__box">
-                            <div className="home__wrap">
-                                <h3 className="heading heading__3">
-                                    Lorem Ipsum
-                                </h3>
-                                <p className="paragraph paragraph__2">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
-                                </p>
-                            </div>
-                            <img 
-                                src="../../images/concert-1.jpg" 
-                                alt="landscape"
-                                className="home__photo"
-                            />
+                <section className="home__offer-gallery">
+                    <div className="home__wrap">
+                        <div className="home__main">
+                            <span className="home__title home__title--big">
+                                Fotografia noworodkowa
+                                <span className="home__description">
+                                    Miej niezapomniane zdjęcia swojego gówniaka w powijkach blablablablabla
+                                </span>
+                            </span>
                         </div>
-                        <div className="home__box">
-                            <img 
-                                src="../../images/concert-2.jpg" 
-                                alt="landscape"
-                                className="home__photo"
-                            />
-                            <div className="home__wrap">
-                                <h3 className="heading heading__3">
-                                    Lorem Ipsum
-                                </h3>
-                                <p className="paragraph paragraph__2">
-                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
-                                </p>
+                        <div className="home__row">
+                            <div className="home__sub home__sub--first">
+                                <span className="home__title">
+                                    Fotografia dziecięca
+                                    <span className="home__description">
+                                        Miej niezapomniane zdjęcia swojego gówniaka gdy już może drzeć jape blablablablabla, w ofercie zdjecia kejksmasz
+                                    </span>
+                                </span>
+                            </div>
+                            <div className="home__sub home__sub--second">
+                                <span className="home__title">
+                                    Fotografia rodzinna
+                                    <span className="home__description">
+                                        Miej zdjęcia całej swojej familii przed rozwodem, w ofercie zdjecia ciazowe i poronne
+                                    </span>
+                                </span>
+                            </div>
+                            <div className="home__sub home__sub--third">
+                                <span className="home__title">
+                                    Fotografia tematyczna
+                                    <span className="home__description">
+                                        sesje indywidualne portretowe itd itd
+                                    </span>
+                                </span>
                             </div>
                         </div>
-                        <Link
-                            to="/contact"
-                            className="home__link"
-                        >
-                            Contact me!
-                        </Link>
                     </div>
                 </section>
+                <OfferTable />
+                <div className="home__button">
+                    <Link
+                        to="/contact"
+                        className="home__link"
+                    >
+                        Contact me!
+                    </Link>
+                </div>
                 <section className="home__gallery">
                     {[1,2,3,4,5,6,7,8].map((x,i) => 
                         <img src={`../../images/landscape-${i+1}.jpg`} alt={i} key={i} className="home__img"/>
