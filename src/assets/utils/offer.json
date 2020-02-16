@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Fotografia noworodkowa",
+        "types": {
+            "basic": {
+                "name": "Basic",
+                "price": "150",
+                "description": [
+                    "5 zdjęć cyfrowych (w tym jedno rodzinne)",
+                    "Wydruki w wysokiej jakości 15x23cm",
+                    "3 stylizacje do wyboru",
+                    "Pendrive z wybranymi zdjęciami",
+                    "Czas sesji: 2 godziny"
+                ]
+            },
+            "standard": {
+                "name": "Standard",
+                "price": "200",
+                "description": [
+                    "10 zdjęć cyfrowych (w tym jedno rodzinne)",
+                    "Wydruki w wysokiej jakości 15x23cm",
+                    "Od 3 do 5 stylizacji do wyboru",
+                    "Pendrive z wybranymi zdjęciami",
+                    "Czas sesji: 2,5 godziny"
+                ]
+            },
+            "premium": {
+                "name": "Premium",
+                "price": "300",
+                "description": [
+                    "15 zdjęć cyfrowych (w tym rodzinne)",
+                    "Wydruki w wysokiej jakości 15x23cm",
+                    "Od 4 do 6 stylizacji do wyboru",
+                    "Do wyboru: album w formacie 19x19cm lub zdjęcie na płótnie 30x34cm",
+                    "Pendrive z wybranymi zdjęciami",
+                    "Czas sesji: Od 3 do 4 godzin"
+                ]
+            }
+        }
+    },
+    {
+        "name": "",
+        "types": {
+            "basic": {
+                "name": "",
+                "price": "",
+                "description": [
+                ]
+            },
+            "standard": {
+                "name": "",
+                "price": "",
+                "description": [
+
+                ]
+            },
+            "premium": {
+                "name": "",
+                "price": "",
+                "description": [
+
+                ]
+            }
+        }
+    },
+    {
+        "name": "Fotografia noworodkowa",
+        "types": {
+            "basic": {
+                "name": "Basic",
+                "price": "150",
+                "description": [
+                    "5 zdjęć cyfrowych (w tym jedno rodzinne)",
+                    "Wydruki w wysokiej jakości 15x23cm",
+                    "3 stylizacje do wyboru",
+                    "Pendrive z wybranymi zdjęciami",
+                    "Czas sesji: 2 godziny"
+                ]
+            },
+            "standard": {
+                "name": "",
+                "price": "",
+                "description": [
+
+                ]
+            },
+            "premium": {
+                "name": "",
+                "price": "",
+                "description": [
+
+                ]
+            }
+        }
+    }
+]

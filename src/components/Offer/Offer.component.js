@@ -4,180 +4,103 @@ import React from "react";
 //Importing components
 
 //Importing styles
-import "./OfferTable.scss"
+import "./Offer.scss"
 
 //OfferTable component
-export const OfferTable = props => {
+export const OfferComponent = props => {
     return (
         <section className="offer-table">
             <h1 className="heading heading__1">
-                My offer
+                Oferta
             </h1>
             <div className="offer-table__block">
+{/* ---------------------------------------------------------------- */}
+{/* ------------------------------------------------FOTOGRAFIA NOWORODKOWA-------------------------- */}
+{/* ---------------------------------------------------------------- */}
                 <div className="offer-table__box">
                     <div className="offer-table__product offer-table__product--first">
-                        <span className="offer-table__title">
-                            Fotografia dziecięca
-                        </span>
-                    </div>
-                    <div className="offer-table__option">
-                        <div className="offer-table__alternative">
-                            <span className="offer-table__choice">
-                                Basic
-                            </span>
-                            <span className="offer-table__price">
-                                120
-                            </span>
-                        </div>
-                        <ul className="offer-table__list">
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    10 zdjęć cyfrowych w wysokiej jakości
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    Sesja w studiu
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="offer-table__option">
-                        <div className="offer-table__alternative">
-                            <span className="offer-table__choice">
-                                Standard
-                            </span>
-                            <span className="offer-table__price">
-                                180
-                            </span>
-                        </div>
-                        <ul className="offer-table__list">
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    15 zdjęć cyfrowych w wysokiej jakości
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    15 zdjęć papierowych w wymiarze 15x23
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    Piękne opakowanie i płyta CD ze zdjęciami
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    Sesja w studiu
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="offer-table__option">
-                        <div className="offer-table__alternative">
-                            <span className="offer-table__choice">
-                                Premium
-                            </span>
-                            <span className="offer-table__price">
-                                300
-                            </span>
-                        </div>
-                        <ul className="offer-table__list">
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    20 zdjęć cyfrowych w wysokiej jakości
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    20 zdjęć papierowych w wymiarze 15x23
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    Piękne opakowanie i płyta CD ze zdjęciami
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    Zdjęcie na piance PVC
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    Ekskluzywny album ze zdjęciami
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    Sesja w studiu
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="offer-table__box">
-                    <div className="offer-table__product offer-table__product--second">
                         <span className="offer-table__title">
                             Fotografia noworodkowa
                         </span>
                     </div>
                     <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------BASIC */}
                         <div className="offer-table__alternative">
                             <span className="offer-table__choice">
                                 Basic
                             </span>
                             <span className="offer-table__price">
-                                120
+                                150
                             </span>
                         </div>
                         <ul className="offer-table__list">
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    10 zdjęć cyfrowych w wysokiej jakości
+                                    5 zdjęć cyfrowych (w tym ujęcie rodzinne)
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Sesja w studiu
+                                    Wydruki w wysokiej jakości 15x23cm
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    3 stylizacje do wyboru
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 2 godziny
                                 </span>
                             </li>
                         </ul>
                     </div>
                     <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------STANDARD */}
                         <div className="offer-table__alternative">
                             <span className="offer-table__choice">
                                 Standard
                             </span>
                             <span className="offer-table__price">
-                                180
+                                200
                             </span>
                         </div>
                         <ul className="offer-table__list">
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    15 zdjęć cyfrowych w wysokiej jakości
+                                    10 zdjęć cyfrowych (w tym ujęcia rodzinne)
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    15 zdjęć papierowych w wymiarze 15x23
+                                    Wydruki w wysokiej jakości 15x23cm
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Piękne opakowanie i płyta CD ze zdjęciami
+                                    Od 3 do 5 stylizacji do wyboru
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Sesja w studiu
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 2,5 godziny
                                 </span>
                             </li>
                         </ul>
                     </div>
                     <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------PREMIUM */}
                         <div className="offer-table__alternative">
                             <span className="offer-table__choice">
                                 Premium
@@ -189,37 +112,164 @@ export const OfferTable = props => {
                         <ul className="offer-table__list">
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    20 zdjęć cyfrowych w wysokiej jakości
+                                    15 zdjęć cyfrowych (w tym ujęcia rodzinne)
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    20 zdjęć papierowych w wymiarze 15x23
+                                    Wydruki w wysokiej jakości 15x23cm
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Piękne opakowanie i płyta CD ze zdjęciami
+                                    Od 4 do 6 stylizacji do wyboru
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Zdjęcie na piance PVC
+                                    Pendrive z wybranymi zdjęciami
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Ekskluzywny album ze zdjęciami
+                                    Do wyboru: album w formacie 19x19cm lub zdjęcie na płótnie 30x34cm
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Sesja w studiu
+                                    Czas sesji: Od 3 do 4 godzin
                                 </span>
                             </li>
                         </ul>
                     </div>
                 </div>
+{/* ---------------------------------------------------------------- */}
+{/* ------------------------------------------------FOTOGRAFIA DZIECIĘCA---------------------------- */}
+{/* ---------------------------------------------------------------- */}
+                <div className="offer-table__box">
+                    <div className="offer-table__product offer-table__product--second">
+                        <span className="offer-table__title">
+                            Fotografia dziecięca
+                        </span>
+                    </div>
+                    <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------BASIC */}
+                        <div className="offer-table__alternative">
+                            <span className="offer-table__choice">
+                                Basic
+                            </span>
+                            <span className="offer-table__price">
+                                100
+                            </span>
+                        </div>
+                        <ul className="offer-table__list">
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    5 zdjęć cyfrowych
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Wydruki w wysokiej jakości 15x23cm
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    2 stylizacje do wyboru
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 45 minut
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------STANDARD */}
+                        <div className="offer-table__alternative">
+                            <span className="offer-table__choice">
+                                Standard
+                            </span>
+                            <span className="offer-table__price">
+                                150
+                            </span>
+                        </div>
+                        <ul className="offer-table__list">
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    10 zdjęć cyfrowych (w tym ujęcie rodzinne)
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Wydruki w wysokiej jakości 15x23cm
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    3 stylizacje do wyboru
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 1,5 godziny
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------PREMIUM */}
+                        <div className="offer-table__alternative">
+                            <span className="offer-table__choice">
+                                Premium
+                            </span>
+                            <span className="offer-table__price">
+                                200
+                            </span>
+                        </div>
+                        <ul className="offer-table__list">
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    15 zdjęć cyfrowych (w tym ujęcia rodzinne)
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Wydruki w wysokiej jakości 15x23cm
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Od 4 do 5 stylizacji do wyboru
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 2 godziny
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+{/* ---------------------------------------------------------------- */}
+{/* ------------------------------------------------FOTOGRAFIA RODZINNA----------------------------- */}
+{/* ---------------------------------------------------------------- */}
                 <div className="offer-table__box">
                     <div className="offer-table__product offer-table__product--third">
                         <span className="offer-table__title">
@@ -227,104 +277,249 @@ export const OfferTable = props => {
                         </span>
                     </div>
                     <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------BASIC */}
                         <div className="offer-table__alternative">
                             <span className="offer-table__choice">
                                 Basic
                             </span>
                             <span className="offer-table__price">
-                                120
+                                150
                             </span>
                         </div>
                         <ul className="offer-table__list">
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    10 zdjęć cyfrowych w wysokiej jakości
+                                    10 zdjęć cyfrowych
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Sesja w studiu lub na zewnątrz
+                                    Wydruki w wysokiej jakości 15x23cm
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    2 stylizacje do wyboru
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 1,5 godziny
                                 </span>
                             </li>
                         </ul>
                     </div>
                     <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------STANDARD */}
                         <div className="offer-table__alternative">
                             <span className="offer-table__choice">
                                 Standard
                             </span>
                             <span className="offer-table__price">
-                                180
+                                210
                             </span>
                         </div>
                         <ul className="offer-table__list">
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    15 zdjęć cyfrowych w wysokiej jakości
+                                    15 zdjęć cyfrowych
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    15 zdjęć papierowych w wymiarze 15x23
+                                    Wydruki w wysokiej jakości 15x23cm
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Piękne opakowanie i płyta CD ze zdjęciami
+                                    3 stylizacje do wyboru
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Sesja w studiu lub na zewnątrz
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 2 godziny
                                 </span>
                             </li>
                         </ul>
                     </div>
+                    <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------PREMIUM */}
+                        <div className="offer-table__alternative">
+                            <span className="offer-table__choice">
+                                Premium
+                            </span>
+                            <span className="offer-table__price">
+                                260
+                            </span>
+                        </div>
+                        <ul className="offer-table__list">
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    20 zdjęć cyfrowych
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Wydruki w wysokiej jakości 15x23cm
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Od 4 do 5 stylizacji do wyboru
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 3 godziny
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+{/* ---------------------------------------------------------------- */}
+{/* ------------------------------------------------FOTOGRAFIA CIĄŻOWA----------------------------- */}
+{/* ---------------------------------------------------------------- */}
+                <div className="offer-table__box">
+                    <div className="offer-table__product offer-table__product--fourth">
+                        <span className="offer-table__title">
+                            Fotografia ciążowa
+                        </span>
+                    </div>
+                    <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------BASIC */}
+                        <div className="offer-table__alternative">
+                            <span className="offer-table__choice">
+                                Basic
+                            </span>
+                            <span className="offer-table__price">
+                                100
+                            </span>
+                        </div>
+                        <ul className="offer-table__list">
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    5 zdjęć cyfrowych
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Wydruki w wysokiej jakości 15x23cm
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    2 stylizacje do wyboru
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 45 minut
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="offer-table__option">
+{/* --------------------------------------------------------------------------------STANDARD */}
+                        <div className="offer-table__alternative">
+                            <span className="offer-table__choice">
+                                Standard
+                            </span>
+                            <span className="offer-table__price">
+                                160
+                            </span>
+                        </div>
+                        <ul className="offer-table__list">
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    10 zdjęć cyfrowych (w tym ujęcie rodzinne)
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Wydruki w wysokiej jakości 15x23cm
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    3 stylizacje do wyboru
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Pendrive z wybranymi zdjęciami
+                                </span>
+                            </li>
+                            <li className="offer-table__item">
+                                <span className="offer-table__text">
+                                    Czas sesji: 1,5 godziny
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+{/* --------------------------------------------------------------------------------PREMIUM */}
                     <div className="offer-table__option">
                         <div className="offer-table__alternative">
                             <span className="offer-table__choice">
                                 Premium
                             </span>
                             <span className="offer-table__price">
-                                300
+                                210
                             </span>
                         </div>
                         <ul className="offer-table__list">
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    20 zdjęć cyfrowych w wysokiej jakości
+                                    15 zdjęć cyfrowych (w tym ujęcia z rodziną)
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    20 zdjęć papierowych w wymiarze 15x23
+                                    Wydruki w wysokiej jakości 15x23cm
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Piękne opakowanie i płyta CD ze zdjęciami
+                                    Od 4 do 5 stylizacji do wyboru
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Zdjęcie na piance PVC
+                                    Pendrive z wybranymi zdjęciami
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Ekskluzywny album ze zdjęciami
-                                </span>
-                            </li>
-                            <li className="offer-table__item">
-                                <span className="offer-table__text">
-                                    Sesja w studiu lub na zewnątrz
+                                    Czas sesji: 3 godziny
                                 </span>
                             </li>
                         </ul>
                     </div>
                 </div>
+{/* ---------------------------------------------------------------- */}
+{/* ------------------------------------------------FOTOGRAFIA TEMATYCZNA--------------------------- */}
+{/* ---------------------------------------------------------------- */}
                 <div className="offer-table__box">
-                    <div className="offer-table__product offer-table__product--fourth">
+                    <div className="offer-table__product offer-table__product--fifth">
                         <span className="offer-table__title">
                             Fotografia tematyczna
                         </span>
@@ -370,12 +565,12 @@ export const OfferTable = props => {
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    1 dodatkowe zdjęcie papierowe: <span className="offer-table__little">3</span>
+                                    1 dodatkowe zdjęcie papierowe (15x23cm): <span className="offer-table__little">3</span>
                                 </span>
                             </li>
                             <li className="offer-table__item">
                                 <span className="offer-table__text">
-                                    Priorytetowa obróbka zdjęć: <span className="offer-table__little">50</span>
+                                    Priorytetowa obróbka zdjęć (do 7 dni roboczych): <span className="offer-table__little">50</span>
                                 </span>
                             </li>
                         </ul>

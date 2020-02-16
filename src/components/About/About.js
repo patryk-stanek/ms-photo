@@ -18,10 +18,10 @@ class About extends React.Component {
                 </div>
                 <div className="container about__container">
                     <h2 className="heading heading__1">
-                        About me
+                        O mnie
                     </h2>
                     <p className="paragraph paragraph__1">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur tenetur adipisci ut molestiae, blanditiis excepturi doloremque possimus ab sed exercitationem nihil labore mollitia facere at maiores eveniet nisi neque odio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum nihil eveniet commodi maxime suscipit delectus dolorum explicabo, et rem magni autem accusamus hic earum animi sed blanditiis sequi quasi illum?
+                    Fotografia od dawna odgrywała ogromną rolę w moim życiu. Pamiętam jak za dziecka dostałam pierwszy aparat od rodziców pod gwiazdkę. Cieszyłam się niezmiernie, fotografowałam wtedy dosłownie wszystko! Największą satysfakcją dawało mi uwiecznienia pięknych i ulotnych momentów prawdziwego życia. Moja pasja przeobraziła się w wielką miłość do pracy. Po wielu miesiącach i setkach wykonanych zdjęć przyszedł końcu taki moment gdy poczułam, że fotografia jest dokładnie tym, czym chcę się zajmować profesjonalnie. Jeżeli ktokolwiek zapyta mnie czym ona dla mnie jest - choć zabrzmi to jak banał – odpowiem całkowitym spełnienie. 
                     </p>
                 </div>
                 <div className="about__studio">
@@ -34,7 +34,7 @@ class About extends React.Component {
                                 My studio
                             </h3>
                             <p className="paragraph paragraph__2">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt nobis consectetur inventore laudantium maxime veritatis et nam aliquid ipsum, error voluptatem alias debitis odit repudiandae repellendus nesciunt sapiente, voluptas fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, qui doloribus. Eius quas nihil iure sint dolores vitae labore, quae perspiciatis perferendis quod nobis. Eum rerum provident minus facere! Ad?
+                            Poznając techniczne aspekty fotografii zawsze starałam się krytycznie podchodzić do moich prac i cały czas się doskonalić, jednocześnie zachowując maksimum kreatywności podczas każdej sesji. Moje domowe przytulne studio jest wyposażone w najróżniejsze i najsłodsze rekwizyty do sesji zdjęciowych, które za każdym razem wybieram z największą dokładnością i dzięki którym tworzę niezapomniane ujęcia. Fotografowanie sprawia mi ogromną satysfakcję, a zadowolenie klientów daje ogromną motywację do jeszcze cięższej pracy i ciągłego doskonalenia umiejętności.
                             </p>
                         </div>
                     </div>

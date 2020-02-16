@@ -4,7 +4,7 @@ import BackgroundSlider from "react-background-slider"
 import { Link } from "react-router-dom";
 
 //Importing components
-import { OfferTable } from "../OfferTable/OfferTable"
+import { OfferComponent } from "../Offer/Offer.component"
 
 //Importing images for background slideshow
 import image1 from "../../assets/images/person-1.jpg";
@@ -49,7 +49,7 @@ class Home extends React.Component {
                             <span className="home__title home__title--big">
                                 Fotografia noworodkowa
                                 <span className="home__description">
-                                    Miej niezapomniane zdjęcia swojego gówniaka w powijkach blablablablabla
+                                Upamiętnia ten krótki moment w życiu dziecka, kiedy jest ono tak bardzo niewinne i bezbronne, a jednocześnie najsłodsze na świecie.
                                 </span>
                             </span>
                         </div>
@@ -58,7 +58,7 @@ class Home extends React.Component {
                                 <span className="home__title">
                                     Fotografia dziecięca
                                     <span className="home__description">
-                                        Miej niezapomniane zdjęcia swojego gówniaka gdy już może drzeć jape blablablablabla, w ofercie zdjecia kejksmasz
+                                    Pozwala uchwycić niepowtarzalne momenty życia. Sesje te wywołują uśmiech i entuzjazm w każdym okresie czasu wśród rodziców, dziadków oraz dalszej rodziny.
                                     </span>
                                 </span>
                             </div>
@@ -66,7 +66,7 @@ class Home extends React.Component {
                                 <span className="home__title">
                                     Fotografia rodzinna
                                     <span className="home__description">
-                                        Miej zdjęcia całej swojej familii przed rozwodem, w ofercie zdjecia ciazowe i poronne
+                                    Dobra zabawa i pamiątka na całe życie. Udokumentuje uczucia, pokaże emocje, radość a co najważniejsze - Waszą miłość.
                                     </span>
                                 </span>
                             </div>
@@ -74,20 +74,20 @@ class Home extends React.Component {
                                 <span className="home__title">
                                     Fotografia tematyczna
                                     <span className="home__description">
-                                        sesje indywidualne portretowe itd itd
+                                    Skierowana do początkujących oraz profesjonalnych fotomodelek. W ofercie również zdjęcia portretowe.
                                     </span>
                                 </span>
                             </div>
                         </div>
                     </div>
                 </section>
-                <OfferTable />
+                <OfferComponent />
                 <div className="home__button">
                     <Link
                         to="/contact"
                         className="home__link"
                     >
-                        Contact me!
+                        Napisz do mnie!
                     </Link>
                 </div>
                 <section className="home__gallery">

@@ -7,8 +7,7 @@
         background-image: linear-gradient(to bottom, rgba($color-5, .75), rgba($color-5, .75)), url(../../assets/images/landscape-8.jpg);;
         background-size: cover;
         background-position: top;
-        height: calc(100vh - 150px);
-        height: 60vh;
+        height: 65vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -39,7 +38,7 @@
     }
 
     &__container {
-        padding: 150px 0;
+        padding: 100px 0;
         text-align: center;
     }
 

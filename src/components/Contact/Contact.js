@@ -13,7 +13,7 @@ class Contact extends React.Component {
             <section className="contact">
                 <div className="container">
                     <h1 className="heading heading__1">
-                        Contact me
+                        Napisz do mnie!
                     </h1>
                     <div className="contact__box">
                         <form
@@ -24,7 +24,7 @@ class Contact extends React.Component {
                                     className="contact__input contact__input--half"
                                     type="text"
                                     id="name"
-                                    placeholder="Your name"
+                                    placeholder="Twoje imię"
                                     minLength="3"
                                     required
                                 />
@@ -32,7 +32,7 @@ class Contact extends React.Component {
                                     className="contact__input contact__input--half"
                                     type="email"
                                     id="email"
-                                    placeholder="Your email"
+                                    placeholder="Twój email"
                                     minLength="3"
                                     required
                                 />
@@ -41,14 +41,14 @@ class Contact extends React.Component {
                                 type="text" 
                                 className="contact__input contact__input--full"
                                 id="topic"
-                                placeholder="Topic"
+                                placeholder="Temat"
                                 minLength="3"
                                 required
                             />
                             <textarea
                                 className="contact__input contact__input--textarea"
                                 id="message"
-                                placeholder="Your message"
+                                placeholder="Twoja wiadomość"
                                 rows="10"
                                 required
                                 autoComplete="none"
@@ -57,7 +57,7 @@ class Contact extends React.Component {
                                 className="contact__button"
                                 type="submit"
                             >
-                                Send message
+                                Wyślij
                             </button>
                         </form>
                     </div>

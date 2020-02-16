@@ -26,7 +26,7 @@ export const Navigation = props => {
                 onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
-                    Home
+                    Start
                 </span>
             </NavLink>
             <NavLink
@@ -36,7 +36,7 @@ export const Navigation = props => {
                 onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
-                    Gallery
+                    Galeria
                 </span>
             </NavLink>
             <NavLink
@@ -46,7 +46,7 @@ export const Navigation = props => {
                 onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
-                    About
+                    O mnie
                 </span>
             </NavLink>
             <NavLink
@@ -56,7 +56,17 @@ export const Navigation = props => {
                 onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
-                    Offer
+                    Oferta
+                </span>
+            </NavLink>
+            <NavLink
+                exact to="/info"
+                className="navigation__link"
+                activeClassName="navigation__link--active"
+                onClick={props.closeMenu}
+            >
+                <span className="navigation__wrap">
+                    Informacje
                 </span>
             </NavLink>
             <NavLink
@@ -66,7 +76,7 @@ export const Navigation = props => {
                 onClick={props.closeMenu}
             >
                 <span className="navigation__wrap">
-                    Contact
+                    Kontakt
                 </span>
             </NavLink>
         </nav>
