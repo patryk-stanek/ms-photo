@@ -20,7 +20,7 @@ class Home extends React.Component {
         return (
             <div className="home">
                 <header className="home__header">
-                    <BackgroundSlider 
+                    {/* <BackgroundSlider 
                         images={[
                             image1,
                             image2,
@@ -28,9 +28,105 @@ class Home extends React.Component {
                         ]}
                         duration={7}
                         timeout={2}
-                    />
+                    /> */}
+                    <div className="home__center">
+                        <img src="./images/logo/logo1.png" alt="logo" className="home__logo"/>
+                        <h1>
+                            Fotografia w Lelystad
+                        </h1>
+                    </div>
                 </header>
-                <section className="home__welcome">
+                <section className="home__newborn">
+                    <div className="home__wrap">
+                        <h2 className="home__title">
+                            Fotografia noworodkowa
+                        </h2>
+                        <p className="home__description">
+                            Upamiętnia ten krótki moment w życiu dziecka, kiedy jest ono tak bardzo niewinne i bezbronne, a jednocześnie najsłodsze na świecie.
+                        </p>
+                        <div className="home__xxx">
+                            <a href="#" className="home__link">
+                                Zobacz galerię
+                            </a>
+                            <a href="#" className="home__link">
+                                Sprawdź ofertę
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section className="home__kids">
+                    <div className="home__wrap">
+                        <h2 className="home__title">
+                            Fotografia dziecięca
+                        </h2>
+                        <p className="home__description">
+                            Pozwala uchwycić niepowtarzalne momenty życia. Sesje te wywołują uśmiech i entuzjazm w każdym okresie czasu wśród rodziców, dziadków oraz dalszej rodziny.
+                        </p>
+                        <div className="home__xxx">
+                            <a href="#" className="home__link">
+                                Zobacz galerię
+                            </a>
+                            <a href="#" className="home__link">
+                                Sprawdź ofertę
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section className="home__family">
+                    <div className="home__wrap">
+                        <h2 className="home__title">
+                            Fotografia rodzinna
+                        </h2>
+                        <p className="home__description">
+                            Dobra zabawa i pamiątka na całe życie. Udokumentuje uczucia, pokaże emocje, radość a co najważniejsze - Waszą miłość.
+                        </p>
+                        <div className="home__xxx">
+                            <a href="#" className="home__link">
+                                Zobacz galerię
+                            </a>
+                            <a href="#" className="home__link">
+                                Sprawdź ofertę
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section className="home__pregnancy">
+                    <div className="home__wrap">
+                        <h2 className="home__title">
+                            Fotografia ciążowa
+                        </h2>
+                        <p className="home__description">
+                            Daj mi godzinę, a sprawię, że wspomnienie wczesnego macierzyństwa będzie jeszcze piękniejsze.
+                        </p>
+                        <div className="home__xxx">
+                            <a href="#" className="home__link">
+                                Zobacz galerię
+                            </a>
+                            <a href="#" className="home__link">
+                                Sprawdź ofertę
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section className="home__thema">
+                    <div className="home__wrap">
+                        <h2 className="home__title">
+                            Fotografia tematyczna
+                        </h2>
+                        <p className="home__description">
+                            Skierowana do początkujących oraz profesjonalnych fotomodelek. W ofercie również zdjęcia portretowe.
+                        </p>
+                        <div className="home__xxx">
+                            <a href="#" className="home__link">
+                                Zobacz galerię
+                            </a>
+                            <a href="#" className="home__link">
+                                Sprawdź ofertę
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                {/* <section className="home__welcome">
                     <div className="home__container container">
                         <h1 className="heading heading__1">
                             Fotografia Ciążowa i Noworodkowa Lelystad
@@ -94,7 +190,7 @@ class Home extends React.Component {
                     {[1,2,3,4,5,6,7,8].map((x,i) => 
                         <img src={`../../images/landscape-${i+1}.jpg`} alt={i} key={i} className="home__img"/>
                     )}
-                </section>
+                </section> */}
             </div>
         )
     }

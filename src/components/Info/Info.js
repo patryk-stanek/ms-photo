@@ -11,32 +11,39 @@ import "./Info.scss"
 class Info extends React.Component {
     render() {
         return (
-            <div>
-                <NavLink
-                    exact to="/info/regulations"
-                >
-                    Regulamin
-                </NavLink>
-                <NavLink
-                    exact to="/info/newborns"
-                >
-                    Sesje noworodkowe
-                </NavLink>
-                <NavLink
-                    exact to="/info/children"
-                >
-                    Sesje dziecięce
-                </NavLink>
-                <NavLink
-                    exact to="/info/pregnancy"
-                >
-                    Sesje ciążowe
-                </NavLink>
-                <NavLink
-                    exact to="/info/family"
-                >
-                    Sesje rodzinne
-                </NavLink>
+            <div className="info">
+                <div className="info__center">
+                    <NavLink
+                        className="info__link"
+                        exact to="/info/regulations"
+                    >
+                        Regulamin
+                    </NavLink>
+                    <NavLink
+                        className="info__link"
+                        exact to="/info/newborns"
+                    >
+                        Sesje noworodkowe
+                    </NavLink>
+                    <NavLink
+                        className="info__link"
+                        exact to="/info/children"
+                    >
+                        Sesje dziecięce
+                    </NavLink>
+                    <NavLink
+                        className="info__link"
+                        exact to="/info/pregnancy"
+                    >
+                        Sesje ciążowe
+                    </NavLink>
+                    <NavLink
+                        className="info__link"
+                        exact to="/info/family"
+                    >
+                        Sesje rodzinne
+                    </NavLink>
+                </div>
             </div>
         )
     }

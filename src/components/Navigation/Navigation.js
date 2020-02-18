@@ -10,7 +10,8 @@ export const Navigation = props => {
     let mobileChecker;
 
     if (props.mobileVisibility === false) {
-        mobileChecker = "navigation indicator"
+        // mobileChecker = "navigation indicator"
+        mobileChecker = "navigation"
     } else {
         mobileChecker = "navigation mobile";
         // document.getElementById("nav").style.transform = "scaleY(1)";

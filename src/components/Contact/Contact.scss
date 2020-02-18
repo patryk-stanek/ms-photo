@@ -1,29 +1,36 @@
 @import "../../styles.scss";
 
 .contact {
-    text-align: center;
-    padding-top: 100px;
+    height: 100vh;
+    padding-top: 150px;
+    background-image: linear-gradient(to bottom, rgba($color-2, .9), rgba($color-2, .9)), url(../../assets/images/landscape-2.jpg);
+    background-image: linear-gradient(rgba($color-2, .9), rgba($color-2, .9)), url("../../assets/images/landscape-1.jpg");
+    background-image: linear-gradient(rgba($color-2, .9), rgba($color-2, .9)), url("../../assets/images/offer1.jpg");
+    background-size: cover;
+    background-position: center;
+    // text-align: center;
+    // padding-top: 100px;
 
-    &__heading {
-        font-family: $font-secondary;
-        color: $color-3;
-        font-weight: 100;
-        text-transform: uppercase;
-        font-size: 37px;
-        margin: 75px;
+    // &__heading {
+    //     font-family: $font-secondary;
+    //     color: $color-3;
+    //     font-weight: 100;
+    //     text-transform: uppercase;
+    //     font-size: 37px;
+    //     margin: 75px;
 
-        @include respond(break-l) {
-            font-size: 30px;
-        }
+    //     @include respond(break-l) {
+    //         font-size: 30px;
+    //     }
 
-        @include respond(break-m) {
-            margin: 75px 0 25px;
-        }
+    //     @include respond(break-m) {
+    //         margin: 75px 0 25px;
+    //     }
 
-        @include respond(break-s) {
-            font-size: 25px;
-        }
-    }
+    //     @include respond(break-s) {
+    //         font-size: 25px;
+    //     }
+    // }
 
     &__form {
         width: 70%;
@@ -47,18 +54,19 @@
 
     &__input {
         border: none;
-        border-bottom: 1px solid $color-3;
+        border-bottom: 1px solid $color-white;
         background-color: transparent;
         padding: 20px 0;
-        color: $color-2;
-        margin: 20px 10px;
+        color: $color-white;
+        margin: 10px 10px;
         font-size: 16px;
         font-family: $font-navigation;
 
         &::placeholder {
             font-size: 16px;
             font-family: $font-navigation;
-            color: rgba($color-2, .3);
+            // color: rgba($color-white, .3);
+            color: $color-white;
         }
 
         &--half {
@@ -99,8 +107,24 @@
     }
 
     &__button {
-        @include button-basic($color-1);
-        margin-top: 50px;
+        // @include button-basic($color-1);
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        margin-top: 20px;
+        color: white;
+        font-family: $font-raleway;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+        display: block;
+        // width: 200px;
+        text-decoration: none;
+        // padding: 0 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        // width: auto;
     }
 }
 

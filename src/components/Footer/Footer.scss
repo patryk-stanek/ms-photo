@@ -1,6 +1,10 @@
 @import "../../styles.scss";
 
 .footer {
+    background-image: linear-gradient(to bottom, rgba($color-2, .9), rgba($color-2, .9)), url(../../assets/images/landscape-3.jpg);
+    background-position: center;
+    background-size: cover;
+        font-family: $font-raleway;
 
     &__container {
         padding: 100px 0;
@@ -8,18 +12,17 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        font-family: $font-secondary;
     }
 
     &__text {
-        color: $color-3;
+        color: $color-white;
         font-size: 20px;
     }
 
     &__signature {
-        color: $color-3;
+        color: $color-white;
         font-size: 15px;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         margin-top: 50px;
         text-align: center;
     }

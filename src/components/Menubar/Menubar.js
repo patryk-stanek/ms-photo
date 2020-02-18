@@ -25,33 +25,33 @@ export class Menubar extends React.Component {
         this.closeMobileMenu = this.closeMobileMenu.bind(this);
     }
 
-    componentDidMount() {
-        window.addEventListener("scroll", this.listenScrollEvent);
-        this.setState({
-            mobileMenuVisiblity: false
-        });
-        if (window.innerWidth <= 576) {
-            this.setState({
-                showLogo: "./images/logo/logo-sub.png"
-            })
-        }
-    }
+    // componentDidMount() {
+    //     window.addEventListener("scroll", this.listenScrollEvent);
+    //     this.setState({
+    //         mobileMenuVisiblity: false
+    //     });
+    //     if (window.innerWidth <= 576) {
+    //         this.setState({
+    //             showLogo: "./images/logo/logo-sub.png"
+    //         })
+    //     }
+    // }
 
-    listenScrollEvent = e => {
-        if (window.innerWidth > 576) {
-            if (window.scrollY > 30) {
-                this.setState({
-                    menubarSize: "menubar menubar__bg",
-                    showLogo: "./images/logo/logo-sub.png"
-                })
-            } else {
-                this.setState({
-                    menubarSize: "menubar",
-                    showLogo: "./images/logo/logo-full.png"
-                })
-            }
-        }
-    }
+    // listenScrollEvent = e => {
+    //     if (window.innerWidth > 576) {
+    //         if (window.scrollY > 30) {
+    //             this.setState({
+    //                 menubarSize: "menubar menubar__bg",
+    //                 showLogo: "./images/logo/logo-sub.png"
+    //             })
+    //         } else {
+    //             this.setState({
+    //                 menubarSize: "menubar",
+    //                 showLogo: "./images/logo/logo-full.png"
+    //             })
+    //         }
+    //     }
+    // }
 
     openMobileMenu() {
         if (this.state.mobileMenuVisiblity === false) {
@@ -80,7 +80,7 @@ export class Menubar extends React.Component {
         return (
             <div className={this.state.menubarSize}>
                 <div className="menubar__wrap">
-                    <img src={this.state.showLogo} alt="logo" className="menubar__logo"/>
+                    {/* <img src={this.state.showLogo} alt="logo" className="menubar__logo"/> */}
                 </div>
                 <Navigation mobileVisibility={this.state.mobileMenuVisiblity} closeMenu={() => this.closeMobileMenu()}/>
                 <Socialbar />

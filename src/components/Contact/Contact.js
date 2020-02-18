@@ -12,9 +12,9 @@ class Contact extends React.Component {
         return (
             <section className="contact">
                 <div className="container">
-                    <h1 className="heading heading__1">
+                    {/* <h1 className="heading heading__1">
                         Napisz do mnie!
-                    </h1>
+                    </h1> */}
                     <div className="contact__box">
                         <form
                             className="contact__form"

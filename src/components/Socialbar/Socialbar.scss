@@ -19,13 +19,13 @@
     &__icon {
         font-size: 19px;
         margin: 0 20px;
-        color: $color-3;
+        color: $color-white;
         cursor: pointer;
         @include transition;
 
         &:hover,
         &:active {
-            color: $color-1;
+            color: $color-2;
         }
     
         @include respond(break-l) {

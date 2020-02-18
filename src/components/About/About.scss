@@ -1,27 +1,57 @@
 @import "../../styles.scss";
 
 .about {
-    overflow: hidden;
+    // overflow: hidden;
+    background-image: linear-gradient(to bottom, rgba($color-2, .9), rgba($color-2, .9)), url(../../assets/images/landscape-2.jpg);
+    background-image: linear-gradient(rgba($color-2, .9), rgba($color-2, .9)), url("../../assets/images/offer1.jpg");
+    background-size: cover;
+    background-position: center;
+    // background-color: $color-2;;
+    position: relative;
+    height: 100vh;
+
+    &__xxx {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+
+    &__yyy {
+        display: flex;
+        flex-direction: row;
+    }
 
     &__header {
-        background-image: linear-gradient(to bottom, rgba($color-5, .75), rgba($color-5, .75)), url(../../assets/images/landscape-8.jpg);;
         background-size: cover;
         background-position: top;
-        height: 65vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    &__text {
+        color: $color-white;
+        font-family: $font-raleway;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        line-height: 1.7;
+        font-size: 15px;
+        margin-top: 25px;
+        padding: 20px;
+        text-align: justify;
+    }
+
     &__title {
-        font-family: $font-secondary;
+        font-family: $font-raleway;
         color: $color-white;
         font-weight: 100;
         text-transform: uppercase;
         text-align: center;
-        font-size: 80px;
-        width: 50%;
-        line-height: 1.5;
+        font-size: 40px;
+        // width: 50%;
+        // line-height: 1.5;
         text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
         @include respond(break-l) {
